@@ -56,7 +56,7 @@ envs/
 
 ## 📊 Saída esperada
 ```bash
-✅ Configuração carregada de: /home/leandro/dev/sync-env/.env
+✅ Configuração carregada de: /home/titenq/dev/sync-env/.env
 
 🔍 Processando .env...
 ✅ .env sincronizado!

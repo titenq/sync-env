@@ -54,7 +54,7 @@ envs/
 └── .projeto3.env
 ```
 
-## Saída esperada
+## 📊 Saída esperada
 ```bash
 ✅ Configuração carregada de: /home/leandro/dev/sync-env/.env
 

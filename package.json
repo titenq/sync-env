@@ -7,10 +7,8 @@
     "sync-env": "./dist/index.js"
   },
   "scripts": {
-    "build": "tsc && chmod +x dist/index.js",
-    "prepublish": "npm run build"
+    "build": "tsc"
   },
-  "files": [".env", "dist"],
   "dependencies": {
     "@octokit/rest": "^20.1.2",
     "dotenv": "^16.4.7"
@@ -21,7 +19,6 @@
     "tsx": "^4.19.3",
     "typescript": "^5.8.2"
   },
-  "description": "## Crie o token no GitHub no seguinte link: https://github.com/settings/tokens/new",
   "keywords": [],
   "author": "TitenQ <titenq@gmail.com> (https://github.com/titenq)",
   "license": "GPL-3.0"

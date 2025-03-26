@@ -6,6 +6,7 @@ import { existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { cwd } from 'node:process';
 
+import { RequestInfo, RequestInit } from 'node-fetch';
 import { config } from 'dotenv';
 import { Octokit } from '@octokit/rest';
 
@@ -52,7 +53,18 @@ const syncEnv = async () => {
       throw new Error(`Nenhum arquivo .env* encontrado em ${projectDir}`);
     }
 
-    const octokit = new Octokit({ auth: config.GITHUB_TOKEN });
+    const customFetch = async (url: RequestInfo, init?: RequestInit) => {
+      const { default: fetch } = await import('node-fetch');
+
+      return fetch(url as string, init);
+    };
+
+    const octokit = new Octokit({
+      auth: process.env.GITHUB_TOKEN,
+      request: {
+        fetch: customFetch
+      }
+    });
 
     for (const envFile of envFiles) {
       try {

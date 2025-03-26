@@ -53,3 +53,16 @@ envs/
 ├── .projeto2.local.env
 └── .projeto3.env
 ```
+
+## Saída esperada
+```bash
+✅ Configuração carregada de: /home/leandro/dev/sync-env/.env
+
+🔍 Processando .env...
+✅ .env sincronizado!
+📁 Remoto: envs/.sync-env.env
+📋 .env.example sincronizado (3 variáveis)
+📄 .env.example atualizado
+
+🎉 Todos os arquivos processados com sucesso!
+```

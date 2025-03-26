@@ -6,6 +6,9 @@
   "bin": {
     "sync-env": "./dist/index.js"
   },
+  "engines": {
+    "node": ">=22.14.0"
+  },
   "files": [
     ".env",
     "dist"

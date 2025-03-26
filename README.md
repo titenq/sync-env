@@ -42,7 +42,7 @@ npm link --force
 ```
 
 ## 🛠 Como Usar
-#### É só executar o comando abaixo na raiz de qualquer projeto:
+#### É só executar o comando abaixo na raiz de qualquer projeto que tenha .env:
 ```bash
 sync-env
 ```

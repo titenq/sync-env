@@ -26,7 +26,7 @@ git clone https://github.com/titenq/sync-env.git
 cd sync-env
 ```
 
-#### Crie um arquivo `.env` na raiz do projeto:
+#### Crie um arquivo `.env` na raiz do projeto com o código abaixo:
 ```bash
 GITHUB_USER=nome-do-seu-usuario-no-github
 GITHUB_REPO=nome-do-repositorio-privado

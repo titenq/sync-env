@@ -1,15 +1,14 @@
 # sync-env
 ![](https://img.shields.io/github/stars/titenq/sync-env.svg) ![](https://img.shields.io/github/forks/titenq/sync-env.svg) ![](https://img.shields.io/github/issues/titenq/sync-env.svg)
 
-#### O **sync-env** é uma ferramenta CLI que sincroniza automaticamente seus arquivos `.env` ou `.env.local` com um repositório privado no GitHub, mantendo suas variáveis de ambiente seguras e versionadas.
+#### O **sync-env** é uma ferramenta CLI que sincroniza automaticamente todos os arquivos `.env` com um repositório privado no GitHub, mantendo suas variáveis de ambiente seguras e versionadas.
 
 ## ✨ Funcionalidades
 
-- 🔒 Sincroniza `.env` ou `.env.local` com um repositório privado
+- 🔒 Sincroniza todos os arquivos `.env` com um repositório privado
 - 🔄 Mantém histórico de alterações
 - 🏷️ Nomeia os arquivos remotos automaticamente (ex: `envs/.meu-projeto.env` ou `envs/.meu-projeto.local.env`)
-- ⚡ Cria/atualiza arquivos `.env.example` ou `.env.local.example` automaticamente
-- 🔍 Verifica permissões e existência dos arquivos
+- ⚡ Cria/atualiza todos os arquivos `.env.example` automaticamente
 
 ## 🚀 Instalação
 
@@ -29,7 +28,7 @@ cd sync-env
 
 #### Crie um arquivo `.env` na raiz do projeto:
 ```bash
-GITHUB_USER=nome-usuario-github
+GITHUB_USER=nome-do-seu-usuario-no-github
 GITHUB_REPO=nome-do-repositorio-privado
 GITHUB_TOKEN=token-github
 ```
@@ -38,7 +37,7 @@ GITHUB_TOKEN=token-github
 ```bash
 npm install
 npm run build
-npm link --force
+npm link
 ```
 
 ## 🛠 Como Usar
